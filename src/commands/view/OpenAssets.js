@@ -8,7 +8,7 @@ export default {
     /** @var {Localization} **/
     var localization =
       config && config.em && typeof config.em.get === 'function'
-        ? em.get('localization')
+        ? config.em.get('localization')
         : undefined;
     if (typeof localization !== 'undefined') {
       title = localization.get(`assets.modal_title_text`, title);
