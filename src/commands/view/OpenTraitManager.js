@@ -25,7 +25,7 @@ export default {
       /** @var {Localization} **/
       var localization =
         confTm && confTm.em && typeof confTm.em.get === 'function'
-          ? confTM.em.get('localization')
+          ? confTm.em.get('localization')
           : undefined;
       if (typeof localization !== 'undefined') {
         label_container = localization.get(
